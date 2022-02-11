@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0; /*清除浏览器自带样式*/
+    list-style: none;
+}
+body{
+    background: white; /*全网页背景颜色是白色*/
+}
+a{
+    text-decoration: none;  /*去掉超链接的下划线*/
+}
+
+.b{
+    width: 100%;
+    margin: 0 auto;
+}
+/*鼠标放上去放大*/
+
+#div1 img{
+  cursor: pointer; /*当鼠标移上去，变成手的形状 ,移出去还原*/
+  transition: all 0.6s; /*渐变的过渡属性,图标变大所需的时间*/
+
+}
+#div1 img:hover{    /*放大图片*/
+  transform: scale(1.1); 放大倍数为1.1倍
+  transition: all 0.6s;
+  
+}
+
+#div2 p{ cursor: pointer;      /*文字放大效果*/
+         transition: all 0.6s;
+     }
+#div2:hover { 
+    transform: scale(1.1);
+    transition: all 0.6s;
+ }
+
+/*导航栏部分*/
+.a{
+    width: 100%;
+    height: 100px;
+    background: rgb(56, 94, 15);
+    position: relative;
+}
+.a ul{
+    margin-left: 18%;
+}
+.a ul li a{
+    float: left;
+    margin-left: 12%;
+    margin-top: 20px;
+    color: rgba(255,255,255,1.00);
+    font-weight: lighter; /*图片加粗*/
+}
+/*网页内容部分*/
+.b{
+    width: 100%;
+    height: 2662px;
+    background: url('../images/jie.png') no-repeat 85% 1% rgb(255, 255, 255); /*no-repeat 的意思是背景图像将仅显示一次，是对设置背景图像的值*/
+    position: relative; /*绝对定位*/
+
+}
+/*底栏部分*/
+.c{
+    width: 100%;
+    height: 500px; 
+    background-color:rgba(39,66,10,1.00);
+    margin-top: -111px;
+    position: relative;
+}
+.c .c-1,.c-2,.c-3,.c-4,.c-5  li{
+    position: absolute;
+    top: 40px;
+    font-size: 16px;
+}
+.c ul li{
+    margin-top: 40px;
+}
+.c-1{
+    position: absolute;
+    left: 300px;
+}
+.c-2{
+    position: absolute;
+    left: 480px;
+}
+.c-3{
+    position: absolute;
+    left: 660px;
+}
+.c-4{
+    position: absolute;
+    left: 840px;
+}
+.c p{
+    text-align: center;
+    position: absolute;
+    top: 450px;
+    left: 46%;
+}
+#screen{
+	width: 9999px;
+	height: 9999px;
+	animation: 16s xunhuan infinite;
+	
+}
+#screen img{
+	float:left;
+}
+#tv{
+	width: 600px;
+	height:400px;
+	overflow:hidden;
+}
+@keyframes xunhuan{
+	0%{}
+	25%{transform: translateX(0px)}
+	50%{transform: translateX(-600px)}
+	75%{transform: translateX(-1200px)}
+	100%{transform: translateX(-1800px)}
+}
+/************************end***************************/
